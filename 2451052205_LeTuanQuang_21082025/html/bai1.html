@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 1 - Giải toán</title>
+  <link rel="stylesheet" href="../css/bai1.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/bai1.js"></script>
+</head>
+<body>
+  <h2>Giải phương trình bậc hai: ax² + bx + c = 0</h2>
+  <div class="box">
+    <h3>Giải phương trình ax² + bx + c = 0</h3>
+    <label>Hệ số a: <input type="number" id="a" placeholder="Nhập hệ số a"></label>
+    <label>Hệ số b: <input type="number" id="b" placeholder="Nhập hệ số b"></label>
+    <label>Hệ số c: <input type="number" id="c" placeholder="Nhập hệ số c"></label>
+    <button id="solve">Giải</button>
+    <div id="result"></div>
+  </div>
+
+  <h2>Tính chỉ số BMI</h2>
+  <div class="box">
+    <h3>Tính chỉ số BMI</h3>
+    <label>Cân nặng: <input type="number" id="weight" placeholder="Nhập cân nặng (kg)"></label>
+    <label>Chiều cao: <input type="number" id="height" step="0.01" placeholder="Nhập chiều cao (m)"></label>
+    <button id="bmiBtn">Tính</button>
+    <div id="bmiResult"></div>
+  </div>
+
+  <h2>Tính lãi suất tiết kiệm ngân hàng</h2>
+  <div class="box">
+    <h3>Tính lãi suất tiết kiệm</h3>
+    <label>Số tiền: <input type="number" id="money" placeholder="Nhập số tiền (VNĐ)"></label>
+    <label>Kỳ hạn: <input type="number" id="month" placeholder="Nhập kỳ hạn (tháng)"></label>
+    <label>Lãi suất: <input type="number" id="rate" step="0.1" placeholder="Nhập lãi suất (%/năm)"></label>
+    <button id="interestBtn">Tính</button>
+    <div id="interestResult"></div>
+  </div>
+
+  <h2>Đổi đơn vị tiền tệ từ VNĐ sang USD, EUR, và AUD</h2>
+  <div class="box">
+    <h3>Đổi đơn vị tiền tệ</h3>
+    <label>Số tiền: <input type="number" id="vnd" placeholder="Nhập số tiền (VNĐ)"></label>
+    <label>Đơn vị: 
+      <select id="currency">
+        <option value="USD">USD (1 USD = 22.000 VNĐ)</option>
+        <option value="EUR">EUR (1 EUR = 26.000 VNĐ)</option>
+        <option value="AUD">AUD (1 AUD = 16.000 VNĐ)</option>
+      </select>
+    </label>
+    <button id="convertBtn">Đổi</button>
+    <div id="currencyResult"></div>
+  </div>
+</body>
+</html>
